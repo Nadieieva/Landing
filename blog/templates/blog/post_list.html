@@ -1,0 +1,461 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fiat - landing page</title>
+
+        <!-- Bootstrap -->
+        <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/ionicons/css/ionicons.min.css" rel="stylesheet">        
+        <link href="static/bower_components/flexslider/flexslider.css" rel="stylesheet">
+        <!--main css file-->
+        <link href="static/css/style.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+		
+
+		<!-- 
+		Information from
+		        http://www.fiatusa.com/en/500x 
+		        http://www.fiatusa.com/en/500l 
+		-->
+    </head>
+    <body data-spy="scroll">
+        <!--pre-loader-->
+        <div id="preloader"></div>
+        <!--pre-loader-->
+
+
+        <!--main menu-->
+        <!-- Static navbar -->
+        <header class="navbar navbar-inverse navbar-default navbar-fixed-top navbar-transparent">
+        {% for post in posts %}
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                    	<img src="static/images/fiat.png" style="margin-top: -15px; width: 70px; display: inline" alt="">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right scroll-to">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#features">features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#video-tuts">Video</a></li>
+                        <li><a href="#clients">Partners</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        {% endfor %}
+        </header>
+        <!--end main menu-->
+
+
+        <!--start header-->
+        <section class="header-full-screen background-1" id="home" data-stellar-background-ratio="0.6">
+            <div class="absolute_full">
+                <div class="display-table">
+                    <div class="vertical-middle">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2 text-center">
+                                	<div class="shadow-back">
+                                    	<h1>Meet new and improved <br>Fiat 500X and 500L</h1>
+                                    	<p class="lead">Fiat. Driven by passion </p>
+									</div>
+                                    <div class="buttons  scroll-to">
+                                        <a href="#features" class="btn btn-md btn-primary btn-lg">Learn More <i class="ion-chevron-right"></i></a>
+
+                                        <a href="#" class="btn btn-md btn-white btn-lg">Buy Now <i class="ion-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end main header-->
+
+        <!--features-->
+        <section id="features" class="pattern-bg">
+            <div class="space-80"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center center-title margin-b-50">
+                        <h2>Fiat 500X</h2>
+                        <p class="lead">
+                            A MODERN CLASSIC
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 margin-b-30">
+                        <div class="feature-box">
+                            <i class="ion-camera pull-left"></i>
+                            <div class="overflow-hidden text-justify">
+                                <h4>Design</h4>
+                                <p>
+                                    The All-New 2016 FIAT® 500X boldly enters the crossover market with innovation, functionality and Italian style. Our designers and engineers took the FIAT 500 and added more space, utility, driver-centric amenities, capability and advanced safety and security features. Five trim levels let you choose your personal style. The FIAT 500X Street Series includes the Pop, Easy and Lounge models. The FIAT 500X Trekking and Trekking Plus models feature a more athletic look.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!--col-sm-12-->
+                    <div class="col-sm-12 margin-b-30">
+                        <div class="feature-box colored"><!--.colored class for colored icon-->
+                            <i class="ion-wrench pull-left"></i>
+                            <div class="overflow-hidden text-justify">
+                                <h4>Sexy technology</h4>
+                                <p>
+                                    Why should the exterior of the All-New 2016 FIAT® 500X get all the attention? Inside, you’ll find a number of features to excite and inspire your drive. Uconnect® Systems offer a variety of available features that include full-color touchscreens, Voice Command, GPS Navigation and much more. Add the available BeatsAudio™ premium sound system, and the interior of the FIAT 500X becomes technological perfection.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!--col-sm-12-->
+                    <div class="col-sm-12 margin-b-30">
+                        <div class="feature-box">
+                            <i class="ion-ios-heart pull-left"></i>
+                            <div class="overflow-hidden text-justify">
+                                <h4>It's a safe bet</h4>
+                                <p>
+                                    The muscular appearance of the All-New 2016 FIAT® 500X is no accident. A number of standard and available safety and security features are designed to help keep you protected from the dangers of the road. We started with seven airbags
+7
+ and a steel safety frame for excellent protection in front, side and rear impacts.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!--col-sm-4-->
+                </div><!--row-->
+            </div><!--container-->
+            <div class="space-50"></div>
+        </section>
+        <!--end of features-->
+
+        <!--split section-->
+        <section id="split1" class="split-section">
+            <div class="split-image left-align hidden-sm hidden-xs" style="background: url(static/images/500-L.jpg);">
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 visible-sm visible-xs">
+                        <img src="static/images/500-L.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-5 col-md-offset-7">
+                        <div class="split-content text-justify">
+                            <h2>Fiat 500L. BEST FACE FORWARD</h2>
+                            <p>
+                                The FIAT® 500L Pop features the signature FIAT 500 face, plus the distinctive look and attitude of additional width that’s also functional. The front fascia cooling ducts deliver fresh air to the 1.4L MultiAir® Turbo engine.
+                            </p>
+                            <p>
+                                 With a choice of exterior colors available in metallic and nonmetallic, the FIAT 500L Pop becomes a colorful reflection of your personal style.
+                            </p>
+                            <ul class="list-unstyled features-list">
+                                <li><i class="ion-checkmark"></i> Driver assist system</li>
+                                <li><i class="ion-checkmark"></i> Seven airbags and a steel safety frame</li>
+                                <li><i class="ion-checkmark"></i> Speed control</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--split section end-->
+
+        <!--split section-->
+        <section id="split2" class="split-section gray-bg">
+            <div class="split-image right-align hidden-sm hidden-xs" style="background: url(assets/images/500-L-cabin.jpg);">
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 visible-sm visible-xs">
+                        <img src="static/images/500-L-cabin.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="split-content text-justify">
+                            <h2>LARGER THAN LIFE. SPACIOUS INTERIOR</h2>
+                            <p>
+                                Featuring 121.1 cubic feet on the inside, the FIAT® 500L Pop comes richly outfitted with clever technology. Enjoy Tilt, Tumble & Slide rear seats, convenient storage and generous headroom and legroom wherever you go. 
+                            </p>
+                            <p>
+                                With a ride this comfortable, that could be anywhere.
+                            </p>
+                            <ul class="list-unstyled features-list">
+                                <li><i class="ion-checkmark"></i> Active front seat head restraints</li>
+                                <li><i class="ion-checkmark"></i> Turbocahrger powertrain</li>
+                                <li><i class="ion-checkmark"></i> UCONNECT 5.0 with hands-free communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--split section end-->
+
+
+        <!--pricing start-->
+        <section id="pricing" class="pricing-section pattern-bg">
+            <div class="space-80"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center center-title margin-b-50">
+                        <h2>Pricing tables</h2>
+                        <p class="lead">
+                            2016 FIAT® 500X and 500L starting at MSRP
+                        </p>
+                    </div>
+                </div>
+                <ul class="row list-unstyled no-margin pricing-row">
+                    <li class="col-sm-6 margin-b-30 no-padding">
+                        <div class="price-box">
+                            <img style="width: 270px; height: 180px"src="static/images/500x-pop.png" alt="">
+                            <div class="space-10"></div>
+                            <h4 class="text-capitalize">Fiat 500X</h4>
+                            <div class="price">
+                                <sup>$</sup>20,000
+                            </div>
+                            <ul class="list-unstyled features-list">
+                                <li><i class="ion-checkmark"></i> 1.4L MultiAir® Turbocharged Engine</li>
+                                <li><i class="ion-checkmark"></i> 3.5-Inch Personalized Driver Information Digital Cluster Display</li>
+                                <li><i class="ion-checkmark"></i> Body-Color Instrument Panel</li>
+                                <li><i class="ion-checkmark"></i> Heated Power Side View Mirrors with Turn Signals</li>
+                            </ul>
+                            <a href="#" class="btn btn-lg btn-primary">Buy Now</a>
+                        </div>
+                    </li><!--price col end-->
+                    <li class="col-sm-6 margin-b-30 no-padding">
+                        <div class="price-box colored">
+                            <img style="width: 270px; height: 180px"src="static/images/500l-pop.png" alt="">           
+                            <div class="space-10"></div>
+                            <h4 class="text-capitalize">Fiat 500L</h4>
+                            <div class="price">
+                                <sup>$</sup>19,495
+                            </div>
+                            <ul class="list-unstyled features-list">
+                                <li><i class="ion-checkmark"></i> Five Exterior Colors</li>
+                                <li><i class="ion-checkmark"></i> 1.4L MultiAir® Turbo Engine with 160 HP and 184 LB-FT of Torque </li>
+                                <li><i class="ion-checkmark"></i> Six-Speed Manual Transmission with Hill Start Assist</li>
+                                <li><i class="ion-checkmark"></i> Power, Heated Black Exterior Mirrors</li>
+                            </ul>
+                            <a href="#" class="btn btn-lg btn-default">Buy Now</a>
+                        </div>
+                    </li><!--price col end-->
+                </ul>
+            </div>
+            <div class="space-80"></div>
+        </section>
+        <!--pricing end-->
+
+        
+
+        
+
+        
+
+       
+
+        <!--video-->
+        <section id="video-tuts" class="bg-light-blue bg-section">
+            <div class="space-80"></div>
+            <div class="container">
+                <div class="row sr-bottom">
+                    <div class="col-md-8 col-md-offset-2 text-center center-title margin-b-50">
+                        <h2>Fiat 500X "Volare"</h2>
+                        <p class="lead">
+                            Discover Fiat 500X City Look, the SUV with the metropolitan spirit, and 500X Off-Road Look, the SUV for a no holds barred adventure.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">                   
+                    <div class="col-sm-8 col-sm-offset-2">                      
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe width="854" height="380" src="https://www.youtube.com/embed/sYh9d8t0CGg" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-80"></div>
+        </section>
+        <!--end video-->
+
+        
+       
+
+
+
+        <!--clients-->
+        <section id="clients" class="clients-section bg-dark-blue">
+            <div class="space-80"></div>
+            <div class="container">
+                <div class="row scrollReveal sr-bottom">
+                    <div class="col-md-8 col-md-offset-2 text-center center-title margin-b-50">
+                        <h2>Our partners</h2>
+                        <p class="lead">
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 margin-b-20 scrollReveal">
+                        <a href="#">
+                            <img src="static/images/coca-cola-sign.png" alt="" class="img-responsive img-center">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 margin-b-20 scrollReveal">
+                        <a href="#">
+                            <img src="static/images/volkswagen-sign.png" alt="" class="img-responsive img-center">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 margin-b-20 scrollReveal">
+                        <a href="#">
+                            <img src="static/images/audi-sign.png" alt="" class="img-responsive img-center">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 margin-b-20 scrollReveal">
+                        <a href="#">
+                            <img src="static/images/chevrolet-sign.png" alt="" class="img-responsive img-center">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 margin-b-20 scrollReveal">
+                        <a href="#">
+                            <img src="static/images/subaru-sign.png" alt="" class="img-responsive img-center">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 margin-b-20 scrollReveal">
+                        <a href="#">
+                            <img src="static/images/chery-sign.png" alt="" class="img-responsive img-center">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 margin-b-20 scrollReveal">
+                        <a href="#">
+                            <img src="static/images/bmw-sign.png" alt="" class="img-responsive img-center">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 margin-b-20">
+                        <a href="#">
+                            <img src="static/images/lexus-sign.png" alt="" class="img-responsive img-center">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="space-60"></div>
+        </section>
+        <!--end clients-->
+
+        
+
+
+
+        <!--footer start-->
+        <footer id="footer" class="footer">
+            <div class="space-50"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 margin-b-40">
+                        <h4>About us</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Faqs</a></li>
+                            <li><a href="#">Privacy & Policies</a></li>
+                            <li><a href="#">Terms & conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 margin-b-40">
+                        <h4>Social</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 margin-b-40">
+                        <h4>Download App</h4>
+                        <p>Available at Google store and Play store</p>
+                        <a href="#"><img src="static/images/play-store.png" alt=""></a>
+
+                        <a href="#"><img src="static/images/app-store.png" alt=""></a>
+                    </div>
+                    <div class="col-sm-6 col-md-3 margin-b-40">
+                        <h4>Contact us</h4>
+                        <address>
+                            795 Park Ave, Lorem 600<br>
+                            Columbia, MO 94107<br>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890<br>
+                            E: <a href="mailto:#">email@domain.com</a>
+                        </address>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        &copy; Copyright 2016. Fiat
+                    </div>
+                </div>
+            </div>
+            <div class="space-50"></div>
+        </footer>
+        <!--footer end-->
+
+
+        <!--back to top-->
+        <a href="#" class="scrollToTop"><i class="ion-android-arrow-dropup-circle"></i></a>
+        <!--back to top end-->
+
+
+        <!--modal of video-->
+        <!-- Modal -->
+        <div class="modal video-modal fade" id="video-popup" tabindex="-1" role="dialog" aria-labelledby="video-popup">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="ion-ios-close-empty"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe id="vimeo-video" src="http://player.vimeo.com/video/57175742"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end the modal of video-->
+
+        <!-- jQuery plugins-->
+        <script src="static/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="static/js/jquery-migrate.min.js"></script>
+        <script src="static/js/jquery.easing.min.js"></script>
+        <script src="static/bootstrap/js/bootstrap.min.js"></script>
+        <script src="static/bower_components/flexslider/jquery.flexslider-min.js"></script>
+        <script src="static/js/modernizr.custom.97074.js" type="text/javascript"></script>
+        <script src="static/js/jquery.sticky.js"></script> 
+        <script src="static/js/jquery.stellar.min.js"></script>
+        <script src="static/js/waypoints.min.js"></script>
+        <script src="static/js/jquery.counterup.min.js"></script>
+        <script src="static/js/template-custom.js" type="text/javascript"></script>
+        <script src="static/js/newsletter-custom.js" type="text/javascript"></script> 
+        <script src="static/js/contact.js" type="text/javascript"></script>
+        <!-- Vimeo video API -->
+        <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+        <script type="text/javascript" src="static/js/vimeo.js"></script> 
+    </body>
+</html>
